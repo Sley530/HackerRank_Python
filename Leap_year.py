@@ -2,6 +2,13 @@ def is_leap(year):
     leap = False
 
     if (year % 4 == 0):
-        year = False
-    return leap
-print(is_leap(16))
+        if (year % 100 == 0):
+            if (year % 400 == 0):
+                return True
+            return False
+        return True
+    return False
+
+
+year = int(input())
+print(is_leap(year))
