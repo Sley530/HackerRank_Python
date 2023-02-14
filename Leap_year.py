@@ -1,3 +1,5 @@
+#This is a program to test if a given year is leap or not.
+
 def is_leap(year):
     leap = False
 
